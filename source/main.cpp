@@ -108,7 +108,7 @@ int main()
 
     // Set up the palette for the top screen
     for (int i = 0; i < 32; i++) {
-        palette[31 - i] = i | (i << 5) | ((i << 10)) | (1 << 15);
+        palette[i] = i | (i << 5) | ((i << 10)) | (1 << 15);
     }
 
     // Set the console color
